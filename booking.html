@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,4 +78,85 @@
 </body>
 </html>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANE BOOKING</title>
+    <script src="https://kit.fontawesome.com/e53bf7a0b8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+     integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <link rel="stylesheet" href="bree.css"> 
+</head>
+<body>
+<body>
+    <div class="background">
+        <div class="navbar">
+            <a href="index.html"><h1>K<span>Q</span></h1></a>
+            <ul>
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./Bout.html" class="nav-link">About</a></li>
+                <li><a href="./plane.html" class="nav-link">Plane Schedule</a></li>
+                <li><a href="./shop.html" class="nav-link">Shop</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact us</a></li>
+                <li><a href="./service.html" class="nav-link">Service</a></li>
+            </ul>
+        </div>
+        <div class="form-sector">
+            <div class="form-container">
+                <form action="" method="post">
+                   <h3>E-TICKET</h3>
+                   <input type="name" name="text" required placeholder="enter your name">
+                   <input type="email" name="email" required placeholder="enter your email">
+                   <input type="text" name="text" required placeholder="Method of payment"> <select name="form-select" id="formy"><option value="1">pay pall</option>
+                   <option value="2">Lipa na Mpesa</option>
+                   <option value="3">Other</option></select>
+                   
+                   <input type="password" name="password" required placeholder="enter your password">
+                   <input type="submit" name="submit" value="reserve seat" class="form-btn">
+                   <p>Choose another seat <a href="register.html">Available seats</a></p>
+                </form>
+             </div>
+        </div>
+    
+    </div>
+    
+    <script type="text/javascript">
+        var menuBar=document.getElementById('Home');
+        var navItem =document.getElementsByClassName('navbar');
+        var navMenu =document.getElementsByClassName('nav-menu');
+        var navActive=document.getElementsByClassName('active')
+        var  hide = false;
+        window.addEventListener('resize',function(){
+            if(window.innerWidth > 768){
+                for(let i=0 ; i<navItem.length ;i++){
+                navItem[i].style.visibility='visible'
+            }
+            }
+        })
+        function myClickHandler(){
+            hide =!hide;
+            hide ? navActive[0].style.visibility='hidden':navActive[0].style.visibility='visible'
+            hide ? navMenu[0].style.visibility='hidden': navMenu[0].style.visibility='visible';
+           for(var i=0;i< navItem.length;i++){
+               
+                hide ? navItem[i].style.visibility='hidden': navItem[i].style.visibility='visible'
+            }
+        }
+        menuBar.addEventListener('click',myClickHandler)
+      </script>    
+</body>
+</html>
+</body>
+>>>>>>> e139f9c7ff2442dc38dd568e19ffa0313bc965f1
 </html>

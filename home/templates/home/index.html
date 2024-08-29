@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://kit.fontawesome.com/e53bf7a0b8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'home/css/bee.css' %}">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="company">
+            <div class="logo_name">Travel In Style</div>
+            <div class="logo">
+                <img src="{% static 'home/images/logo.png' %}" alt="Logo" style="height: 6vh;width: auto;" />
+                <i class='bx bx-menu' id="button"></i>
+            </div>
+            <ul class="navlist">
+                <li>
+                    <i class='bx bx-search'></i>
+                    <form action="#">
+                        <input type="search" placeholder="Search...">
+                    </form>
+                </li>
+                <li>
+                    <a href="{% url 'home' %}">
+                        <i class='bx bxs-plane'></i>
+                        <span class="icon_name">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}">
+                        <i class='bx bxs-info-square'></i>
+                        <span class="icon_name">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'flights' %}">
+                        <i class='bx bxs-plane-take-off'></i>
+                        <span class="icon_name">Plane Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'shop' %}">
+                        <i class='bx bxl-shopify'></i>
+                        <span class="icon_name">Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'contact_us' %}">
+                        <i class='bx bx-phone-call'></i>
+                        <span class="icon_name">Contact Us</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'service' %}">
+                        <i class='bx bxs-user-circle'></i>
+                        <span class="icon_name">Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'logout' %}">
+                        <i class='bx bx-log-in' id="sign_out"></i>
+                        <span class="icon_name">Sign Out</span>
+                    </a>
+                </li>
+                
+            </ul>
+            <div class="company_brand">
+                <div class="brand">
+                    <div class="brand_name">
+                        <img src="{% static 'home/images/KQ.jpg' %}" alt="Kenya Airways">
+                        <div class="name">Kenya Airways</div><br>
+                        <div class="motto">The Pride of Africa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hhhhh">
+        <!-- Main content here -->
+    </div>
+
+    <script>
+        let button = document.querySelector("#button");
+        let navbar = document.querySelector(".navbar");
+
+        button.onclick = function () {
+            navbar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

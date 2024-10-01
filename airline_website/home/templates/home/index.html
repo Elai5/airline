@@ -4,144 +4,161 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <script src="https://kit.fontawesome.com/e53bf7a0b8.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+    <title>Kenya Airways</title>
     <link rel="stylesheet" href="{% static 'home/css/bee.css' %}">
 </head>
 
 <body>
     <div class="navbar">
         <div class="company">
-            <div class="logo_name">Travel In Style</div>
             <div class="logo">
-                <img src="{% static 'home/images/logo.png' %}" alt="Logo" style="height: 6vh;width: auto;" />
-                <!-- <i class='bx bx-menu' id="button"></i> -->
+                <img src="Kenya Airways (Kenya ).jpeg" alt="Kenya Airways Logo" />
+                <p>Travel in style</p>
             </div>
             <ul class="navlist">
                 <li>
-                    <i class='bx bx-search'></i>
                     <form action="#">
                         <input type="search" placeholder="Search...">
                     </form>
                 </li>
                 <li>
-                    <a href="{% url 'home' %}">
+                    <a href="#" class="active">
                         <i class='bx bxs-plane'></i>
                         <span class="icon_name">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{% url 'about' %}">
+                    <a href="#">
                         <i class='bx bxs-info-square'></i>
                         <span class="icon_name">About Us</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{% url 'flights' %}">
+                    <a href="#">
                         <i class='bx bxs-plane-take-off'></i>
-                        <span class="icon_name">Plane Schedule</span>
+                        <span class="icon_name">Flight Schedule</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{% url 'shop' %}">
+                    <a href="#">
                         <i class='bx bxl-shopify'></i>
                         <span class="icon_name">Shop</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{% url 'contact_us' %}">
+                    <a href="#">
                         <i class='bx bx-phone-call'></i>
                         <span class="icon_name">Contact Us</span>
                     </a>
                 </li>
-
                 <li>
-                    <a href="{% url 'service' %}">
+                    <a href="#">
                         <i class='bx bxs-user-circle'></i>
                         <span class="icon_name">Services</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{% url 'logout' %}">
+                    <a href="#">
                         <i class='bx bx-log-in' id="sign_out"></i>
                         <span class="icon_name">Sign Out</span>
                     </a>
                 </li>
-
             </ul>
             <div class="company_brand">
                 <div class="brand">
                     <div class="brand_name">
-                        <img src="{% static 'home/images/KQ.jpg' %}" alt="Kenya Airways">
-                        <div class="name">Kenya Airways</div><br>
+                        <img src="/logo1.png" alt="Kenya Airways">
                         <div class="motto">The Pride of Africa</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="hhhhh">
-        <div class="the-content">
-            <div class="box">
-                <h4>Fly with us today</h4>
-                <form action="#" method="post">
-                    <div class="side">
-                        <div class="input-fields">
-                            <label for="from">From:</label>
-                            <input type="text" id="from" name="from" placeholder="Please enter your departure">
-                        </div>
-                        <div class="input-fields">
-                            <label for="to">To:</label>
-                            <input type="text" id="to" name="to" placeholder="Please enter your destination">
-                        </div>
-                    </div>
-                    <div class="submit-button">
-                        <button type="submit">Search Flights</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="the-info">
-                <p>Your dream destination awaits</p>
-                <div class="gallery">
-                    <div class="destination">
-                        <img src="{% static 'home/images/destination1.jpg' %}" alt="Nairobi Skyline"
-                            style="height: 300px;">
-                        <p><strong>Nairobi: The Heartbeat of Africa</strong></p>
-                        <p>Discover the vibrant culture of Kenya's capital. Nairobi offers a blend of modern city life
-                            and rich heritage, with attractions like the Nairobi National Park, bustling markets, and
-                            diverse dining experiences.</p>
-                    </div>
-                    <div class="destination">
-                        <img src="{% static 'home/images/destination2.jpg' %}" alt="Mombasa Beach"
-                            style="height: 300px;">
-                        <p><strong>Mombasa: Pristine Beaches & Coastal Vibes</strong></p>
-                        <p>Relax on the stunning white sands of Mombasa's beaches. Enjoy the turquoise waters of the
-                            Indian Ocean, vibrant coral reefs, and the rich history of the old town. Ideal for a
-                            sun-soaked escape.</p>
-                    </div>
-                    <div class="destination">
-                        <img src="{% static 'home/images/destination3.jpg' %}" alt="Mount Kenya" style="height: 300px;">
-                        <p><strong>Mount Kenya: A Journey Above the Clouds</strong></p>
-                        <p>Embark on an adventure to Kenya's highest peak. Mount Kenya offers breathtaking views,
-                            diverse wildlife, and challenging hikes. Whether you're a seasoned climber or a nature
-                            enthusiast, the mountain's beauty is unparalleled.</p>
-                    </div>
-                </div>
-            </div>
-
+        <div class="toggle-btn" id="toggle-btn">
+            <i class='bx bx-menu'></i>
         </div>
     </div>
+
+    <div class="content">
+        <div class="hero-section">
+            <div class="booking-form">
+                <h2>Book Your Flight</h2>
+                <form action="#">
+                    <input type="text" placeholder="Departure City" required>
+                    <input type="text" placeholder="Arrival City" required>
+                    <input type="date" placeholder="Departure Date" required>
+                    <button type="submit">Search Flights</button>
+                </form>
+            </div>
+        </div>
+        <div class="place">
+            <h2>Popular Destinations</h2>
+            <div class="popular-destinations">
+                <div class="destination-card">
+                    <img src="{% static 'home/images/destination1.jpg' %}">
+                    <h3>Nairobi</h3>
+                    <p>Experience the beauty of Kenya's capital.Discover the vibrant culture of Kenya's capital. Nairobi
+                        offers a blend of modern city life
+                        and rich heritage, with attractions like the Nairobi National Park, bustling markets, and
+                        diverse dining experiences.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="{% static 'home/images/destination2.jpg' %}">
+                    <h3>Maasai Mara</h3>
+                    <p>Witness the Great MigrationExperience the beauty of Kenya's capital.Discover the vibrant culture
+                        of Kenya's capital. Nairobi
+                        offers a blend of modern city life
+                        and rich heritage, with attractions like the Nairobi National Park, bustling markets, and
+                        diverse dining experiences.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="{% static 'home/images/destination3.jpg' %}">
+                    <h3>Mombasa</h3>
+                    <p>Enjoy beautiful beaches and rich culture.Experience the beauty of Kenya's capital.Discover the
+                        vibrant culture of Kenya's capital. Nairobi
+                        offers a blend of modern city life
+                        and rich heritage, with attractions like the Nairobi National Park, bustling markets, and
+                        diverse dining experiences.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="{% static 'home/images/destination3.jpg' %}">
+                    <h3>Lake Victoria</h3>
+                    <p>Discover the largest lake in Africa.Experience the beauty of Kenya's capital.Discover the vibrant
+                        culture of Kenya's capital. Nairobi
+                        offers a blend of modern city life
+                        and rich heritage, with attractions like the Nairobi National Park, bustling markets, and
+                        diverse dining experiences.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="{% static 'home/images/destination 5.jpg' %}">
+                    <h3>Lake Nakuru</h3>
+                    <p>Famous for its flamingos and wildlife.Experience the beauty of Kenya's capital.Discover the
+                        vibrant culture of Kenya's capital. Nairobi
+                        offers a blend of modern city life
+                        and rich heritage, with attractions like the Nairobi National Park, bustling markets, and
+                        diverse dining experiences.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="{% static 'home/images/destination 6.jpg' %}">
+                    <h3>Samburu</h3>
+                    <p>Explore the unique wildlife of Samburu National Reserve.Experience the beauty of Kenya's
+                        capital.Discover the vibrant culture of Kenya's capital. Nairobi
+                        offers a blend of modern city life
+                        and rich heritage, with attractions like the Nairobi National Park, bustling markets, and
+                        diverse dining experiences.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+<!-- <body>
+   
 
     <script>
         let button = document.querySelector("#button");
@@ -152,6 +169,6 @@
         }
     </script>
 
-</body>
+</body> -->
 
 </html>

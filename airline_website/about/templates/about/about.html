@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,12 @@
     <link href="{% static 'about/css/about.css' %}" rel="stylesheet">
     <title>{% block title %}My Airline Website{% endblock %}</title>
 </head>
+
 <body>
     <nav>
-        <a href="index.html"><h1>K<span>Q</span></h1></a>
+        <a href="index.html">
+            <h1>K<span>Q</span></h1>
+        </a>
         <input type="checkbox" id="check">
         <label for="check">
             <i class="fa-light fa-bars"></i>
@@ -35,21 +39,31 @@
             <div class="text">
                 <h3>About Us</h3>
                 <h4>The Pride Of Africa</h4>
-                <p>Kenya Airways is Certified as a 4-Star Airline for the quality of its airport and onboard product and staff service...</p>
-                <p>Kenya Airways, known as "The Pride of Africa," is committed to providing the best air travel experience across the globe. Founded in 1977, we have grown to become one of Africa’s leading airlines.</p>
+                <p>Kenya Airways is Certified as a 4-Star Airline for the quality of its airport and onboard product and
+                    staff service...</p>
+                <p>Kenya Airways, known as "The Pride of Africa," is committed to providing the best air travel
+                    experience across the globe. Founded in 1977, we have grown to become one of Africa’s leading
+                    airlines.</p>
                 <div class="btn">
-                    <a href="{% url 'login' %}"><button class="btn1">Log in</button></a>
-                    <a href="{% url 'register' %}"><button class="btn1">Register</button></a>
+                    <a href="{% url 'login' %}">
+                        <button class="btn1">Login</button>
+                    </a>
+                    <a href="{% url 'register' %}">
+                        <button class="btn1">Register</button>
+                    </a>
                 </div>
+
             </div>
         </div>
     </section>
-    
-    
+
+
     <section class="mission-vision">
         <h2>Our Mission and Vision</h2>
-        <p><strong>Mission:</strong> To deliver excellence in air travel with a focus on customer satisfaction and safety.</p>
-        <p><strong>Vision:</strong> To be Africa’s most preferred airline, known for its innovative services and world-class experience.</p>
+        <p><strong>Mission:</strong> To deliver excellence in air travel with a focus on customer satisfaction and
+            safety.</p>
+        <p><strong>Vision:</strong> To be Africa’s most preferred airline, known for its innovative services and
+            world-class experience.</p>
     </section>
 
     <section class="team">
@@ -59,7 +73,6 @@
             <h3>John Doe</h3>
             <p>CEO</p>
         </div>
-        <!-- Repeat for other team members -->
     </section>
 
     <section class="achievements">
@@ -94,7 +107,6 @@
         <blockquote>
             <p>"Kenya Airways offers a fantastic travel experience with top-notch service." - Jane Smith</p>
         </blockquote>
-        <!-- Repeat for other testimonials -->
     </section>
 
     <section class="contact">
@@ -110,4 +122,5 @@
         <a href="{% url 'flights' %}" class="btn-book">Book a Flight</a>
     </section>
 </body>
+
 </html>

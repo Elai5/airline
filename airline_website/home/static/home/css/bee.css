@@ -107,7 +107,6 @@ body {
     margin-bottom: 20px;
 }
 
-
 .toggle-btn {
     display: none;
     /* Hide toggle button by default */
@@ -124,6 +123,7 @@ body {
 @media (max-width: 768px) {
     .navbar {
         width: 90px;
+        height: auto;
     }
 
     .navbar .logo {
@@ -260,9 +260,7 @@ body {
 .popular-destinations {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Three columns of equal width */
     gap: 20px;
-    /* Space between the cards */
     margin-top: 20px;
 }
 
@@ -272,24 +270,18 @@ body {
     padding: 15px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
     transition: transform 0.3s ease;
-    /* Smooth transition on hover */
 }
 
 .destination-card:hover {
     transform: scale(1.05);
-    /* Slight scaling effect on hover */
 }
 
 .destination-card img {
     width: 100%;
     height: 150px;
-    /* Fixed height for the image */
     object-fit: cover;
-    /* Ensure the image fits within the card without distortion */
     border-radius: 8px 8px 0 0;
-    /* Rounded top corners for the image */
 }
 
 .destination-card h3 {
@@ -306,13 +298,99 @@ body {
 @media (max-width: 768px) {
     .popular-destinations {
         grid-template-columns: repeat(2, 1fr);
-        /* Two columns on smaller screens */
+    }
+
+    .destination-card p {
+        max-height: 70px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .destination-card img {
+        height: 120px;
+    }
+
+    .destination-card h3 {
+        font-size: 16px;
+    }
+
+    .hero-section {
+        height: auto;
+    }
+
+    .booking-form {
+        width: 90%;
+        /* Make the form take up more of the screen */
+        margin: 10px auto;
+        /* Adjust margins for smaller screens */
+        padding: 15px;
+        /* Reduce padding for mobile */
+    }
+
+    .booking-form h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .booking-form input,
+    .booking-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .booking-form input {
+        margin: 5px 0;
+    }
+
+    .booking-form button {
+        font-size: 16px;
+        padding: 10px;
     }
 }
 
 @media (max-width: 480px) {
     .popular-destinations {
         grid-template-columns: 1fr;
-        /* One column on very small screens */
+    }
+
+    .booking-form {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .booking-form h2 {
+        font-size: 18px;
+    }
+
+    .booking-form input,
+    .booking-form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .content {
+        background-color: purple;
+        padding: 10px;
+        overflow: scroll;
+    }
+
+    .destination-card p {
+        max-height: 65px;
+        line-clamp: 2;
+    }
+
+    .destination-card img {
+        height: 100px;
+    }
+
+    .destination-card h3 {
+        font-size: 14px;
+    }
+
+    .destination-card {
+        padding: 10px;
     }
 }

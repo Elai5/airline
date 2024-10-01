@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +13,7 @@
     <div class="navbar">
         <div class="company">
             <div class="logo">
-                <img src="Kenya Airways (Kenya ).jpeg" alt="Kenya Airways Logo" />
+                <img src="{% static 'home/images/Kenya Airways (Kenya ).jpeg' %}">
                 <p>Travel in style</p>
             </div>
             <ul class="navlist">
@@ -69,7 +68,7 @@
             <div class="company_brand">
                 <div class="brand">
                     <div class="brand_name">
-                        <img src="/logo1.png" alt="Kenya Airways">
+                        <img src="{% static 'home/images/logo1.png' %}">
                         <div class="motto">The Pride of Africa</div>
                     </div>
                 </div>

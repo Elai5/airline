@@ -5,7 +5,6 @@
     text-decoration: none;
 }
 
-/* Navbar styles */
 nav {
     background-color: black;
     padding: 10px 20px;
@@ -18,12 +17,19 @@ nav img {
     height: 50px;
 }
 
+/* .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} */
+
 nav input[type="checkbox"] {
     display: none;
 }
 
 nav label {
     display: none;
+
 }
 
 nav h1 {
@@ -93,56 +99,17 @@ nav ul li:hover::after {
     background-color: darkred;
 }
 
-/* Responsive menu toggle for mobile */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        display: none;
-    }
-
-    nav input[type="checkbox"]:checked~ul {
-        display: flex;
-    }
-
-    nav label {
-        display: block;
-        /* Show menu toggle button */
-        cursor: pointer;
-        color: white;
-    }
-
-    nav label i {
-        font-size: 24px;
-        /* Adjust icon size */
-    }
-}
-
-@media (max-width: 480px) {
-    .book-btn {
-        display: none;
-    }
-}
-
-
-
-/* Section styling */
 .bout {
-    /* margin-top: 60px; */
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    /* background-color: green; */
 }
 
 .bout .main img {
     height: auto;
-    width: 34%;
+    width: 36%;
     padding: 0 10px;
 }
 
@@ -160,7 +127,6 @@ nav ul li:hover::after {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    /* background-color: green; */
 
 }
 
@@ -170,7 +136,7 @@ nav ul li:hover::after {
     letter-spacing: 1px;
     font-weight: bolder;
     margin-bottom: 10px;
-    color: red
+    color: red;
 }
 
 .text h4 {
@@ -182,10 +148,10 @@ nav ul li:hover::after {
 
 .text p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     color: #777777;
     line-height: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .btn a {
@@ -206,6 +172,7 @@ nav ul li:hover::after {
 
 .btn1:hover {
     background-color: #b71821;
+    background-color: green;
 }
 
 .btn a {
@@ -217,17 +184,6 @@ nav ul li:hover::after {
     gap: 10px;
 }
 
-@media (max-width: 768px) {
-    .btn {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn1 {
-        width: 100%;
-        text-align: center;
-    }
-}
 
 .btn .btn2:hover {
     background-color: white;
@@ -295,4 +251,77 @@ h3 {
 
 .book-btn:hover {
     background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 25px;
+        cursor: pointer;
+
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        z-index: 10;
+    }
+
+    #check:checked~ul {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .book-btn {
+        display: none;
+    }
+
+    .menu-icon span {
+        background-color: white;
+        height: 2px;
+        width: 100%;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    #check:checked+label .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #check:checked+label .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #check:checked+label .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 16px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .book-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 }

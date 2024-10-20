@@ -12,7 +12,14 @@ nav {
     display: flex;
     align-items: center !important;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 1000 !important;
+    position: fixed;
+    /* Make the navbar fixed */
+    top: 0;
+    /* Stick to the top */
+    left: 0;
+    /* Align to the left */
+    width: 100%
 }
 
 nav img {
@@ -107,11 +114,13 @@ nav ul li:hover::after {
     height: 100vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+    padding-top: 150px;
 }
 
 .bout .main {
     display: flex;
+    gap: 100px;
 }
 
 .text {
@@ -171,9 +180,11 @@ nav ul li:hover::after {
 }
 
 .small-carousel {
-    max-width: 800px;
-    height: 500px;
+    max-width: 1000px;
+    height: auto;
+    /* height: 500px; */
     overflow: hidden;
+    border-radius: 3px;
 }
 
 .small-carousel .carousel-inner img {
@@ -213,6 +224,7 @@ nav ul li:hover::after {
 }
 
 @media (max-width: 768px) {
+
     .menu-icon {
         display: flex;
         flex-direction: column;
@@ -267,6 +279,7 @@ nav ul li:hover::after {
     #check:checked+label .menu-icon span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
+
     .main {
         flex-direction: column;
         text-align: center;
@@ -291,4 +304,47 @@ nav ul li:hover::after {
         padding: 8px 15px;
         font-size: 14px;
     }
+}
+
+.our-mission {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+    background-size: cover;
+    /* Cover the entire section */
+    background-position: center;
+    /* Center the image */
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    /* Flexbox for centering content */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center text */
+}
+
+.mission-content {
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background for contrast */
+    padding: 20px;
+    /* Padding for content */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.mission-content h2 {
+    font-size: 3rem;
+    /* Adjust font size as needed */
+    margin-bottom: 20px;
+    /* Space below heading */
+}
+
+.mission-content p {
+    font-size: 1.5rem;
+    /* Adjust font size as needed */
+    line-height: 1.5;
+    /* Better line spacing */
 }

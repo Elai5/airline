@@ -215,7 +215,6 @@ nav ul li:hover::after {
     padding: 12px;
     vertical-align: top;
     border: 1px solid #dee2e685;
-
 }
 
 .table tbody tr td {

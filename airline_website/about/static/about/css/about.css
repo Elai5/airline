@@ -5,12 +5,14 @@
     text-decoration: none;
 }
 
+
 nav {
     background-color: black;
     padding: 10px 20px;
     display: flex;
-    align-items: center;
+    align-items: center !important;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 nav img {
@@ -26,34 +28,43 @@ nav label {
 }
 
 nav h1 {
-    color: white;
+    color: white !important;
+    font-size: 22px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav h1 span {
     color: red;
     align-items: left;
     padding-right: 0;
+    font-weight: bold !important;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 20px !important;
     position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 17px;
+    color: white !important;
+    font-size: 17px !important;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-    padding: 5px 0;
+    padding: 5px 0 !important;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav ul li::after {
@@ -79,7 +90,7 @@ nav ul li:hover::after {
 .book-button {
     background-color: red;
     color: white;
-    padding: 8px 12px;
+    padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
@@ -97,30 +108,17 @@ nav ul li:hover::after {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: green; */
 }
 
-.bout .main img {
-    height: auto;
-    width: 36%;
-    padding: 0 10px;
+.bout .main {
+    display: flex;
 }
 
 .text {
-    width: 600px;
-    max-width: 100%;
-    padding: 0 10px;
-}
-
-.main {
-    width: 1290px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-
+    max-width: 600px;
+    /* Adjusted max-width */
+    width: 100%;
+    padding: 0 50px;
 }
 
 .text h3 {
@@ -165,11 +163,6 @@ nav ul li:hover::after {
 
 .btn1:hover {
     background-color: #b71821;
-    background-color: green;
-}
-
-.btn a {
-    display: inline-block;
 }
 
 .btn {
@@ -177,79 +170,19 @@ nav ul li:hover::after {
     gap: 10px;
 }
 
-
-.btn .btn2:hover {
-    background-color: white;
-    color: black;
-    transition: 2s;
-    cursor: pointer;
-}
-
-.about-intro,
-.mission-vision,
-.team,
-.achievements,
-.fleet,
-.social-responsibility,
-.testimonials,
-.contact,
-.cta {
-    padding: 20px;
-    background: white;
-    margin-bottom: 20px;
-}
-
-h1,
-h2,
-h3 {
-    color: black;
-}
-
-.team-member {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.team-member img {
-    border-radius: 50%;
-    margin-right: 15px;
-    width: 80px;
-    height: 80px;
-}
-
-.btn-book {
-    display: inline-block;
-    background-color: red;
-    color: white;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn-book:hover {
-    background-color: darkred;
-}
-
-
 .small-carousel {
-    max-width: 700px;
-    /* Adjust carousel width */
-    max-height: 300px;
-    /* Adjust carousel height */
-    /* margin: 0 auto; */
-    /* Center the carousel horizontally */
+    max-width: 800px;
+    height: 500px;
+    overflow: hidden;
 }
 
 .small-carousel .carousel-inner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ensures the image fits the carousel container */
+    transition: none;
 }
 
-/* Adjust caption size for smaller carousel */
 .small-carousel .carousel-caption h5 {
     font-size: 1.2rem;
 }
@@ -258,13 +191,26 @@ h3 {
     font-size: 1rem;
 }
 
-/* Adjust the size of control icons */
-.small-carousel .carousel-control-prev-icon,
-.small-carousel .carousel-control-next-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
 }
 
+.carousel-item {
+    transition: none !important;
+}
+
+.carousel {
+    transition: none !important;
+}
+
+.carousel-item {
+    transition: none !important;
+}
+
+.small-carousel .carousel-inner img {
+    transition: none !important;
+}
 
 @media (max-width: 768px) {
     .menu-icon {
@@ -274,7 +220,6 @@ h3 {
         height: 20px;
         width: 25px;
         cursor: pointer;
-
     }
 
     .navbar ul {
@@ -321,6 +266,15 @@ h3 {
 
     #check:checked+label .menu-icon span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .small-carousel,
+    .text {
+        max-width: 100%;
     }
 }
 

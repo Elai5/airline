@@ -173,17 +173,15 @@ body {
 
 .content {
     padding: 40px;
-    /* background-color: #f4f4f4; */
     height: 100%;
     overflow: scroll;
-
 }
 
 .hero-section {
     display: flex;
     position: relative;
     height: 45vh;
-    /* background-image: url(kq1.jpg); */
+    background-image: url(kq1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -253,9 +251,6 @@ body {
 .booking-form button:hover {
     background-color: #b71821;
 }
-
-
-
 
 .popular-destinations {
     display: grid;

@@ -17,19 +17,12 @@ nav img {
     height: 50px;
 }
 
-/* .logo {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-} */
-
 nav input[type="checkbox"] {
     display: none;
 }
 
 nav label {
     display: none;
-
 }
 
 nav h1 {
@@ -86,7 +79,7 @@ nav ul li:hover::after {
 .book-button {
     background-color: red;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 12px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
@@ -229,7 +222,7 @@ h3 {
     display: inline-block;
     background-color: red;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 12px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -239,19 +232,39 @@ h3 {
     background-color: darkred;
 }
 
-.book-btn {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
+
+.small-carousel {
+    max-width: 700px;
+    /* Adjust carousel width */
+    max-height: 300px;
+    /* Adjust carousel height */
+    /* margin: 0 auto; */
+    /* Center the carousel horizontally */
 }
 
-.book-btn:hover {
-    background-color: darkred;
+.small-carousel .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image fits the carousel container */
 }
+
+/* Adjust caption size for smaller carousel */
+.small-carousel .carousel-caption h5 {
+    font-size: 1.2rem;
+}
+
+.small-carousel .carousel-caption p {
+    font-size: 1rem;
+}
+
+/* Adjust the size of control icons */
+.small-carousel .carousel-control-prev-icon,
+.small-carousel .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 
 @media (max-width: 768px) {
     .menu-icon {

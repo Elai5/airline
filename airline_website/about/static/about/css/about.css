@@ -114,18 +114,19 @@ nav ul li:hover::after {
     height: 100vh;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
-    padding-top: 150px;
 }
 
 .bout .main {
     display: flex;
     gap: 100px;
+    background-color: green;
+    /* width: 70%; */
+    /* height: 70vh; */
+
 }
 
 .text {
     max-width: 600px;
-    /* Adjusted max-width */
     width: 100%;
     padding: 0 50px;
 }
@@ -201,6 +202,7 @@ nav ul li:hover::after {
 .small-carousel .carousel-caption p {
     font-size: 1rem;
 }
+
 
 .carousel-control-prev,
 .carousel-control-next {

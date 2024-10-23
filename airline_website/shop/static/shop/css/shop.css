@@ -1,0 +1,77 @@
+#shop {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+#shop h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.catalog-item img {
+    /* width: 100%; */
+    height: 200px;
+    border-radius: 5px;
+}
+
+.catalog-item h3 {
+    margin: 10px 0;
+}
+
+.catalog-item p {
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background-color: #d61a29;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #bb151f;
+}
+
+.short-list {
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+
+}
+
+.short-list li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.short-list li :hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.subheading {
+    text-align: center;
+    color: steelblue;
+    padding: 30px 0;
+    font-size: 28px;
+}

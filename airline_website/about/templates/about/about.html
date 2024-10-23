@@ -17,28 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="index.html">
-            <h1>K<span>Q</span></h1>
-        </a>
-        <input type="checkbox" id="check">
-        <label for="check" class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul>
-            <li><a href="{% url 'home' %}" class="nav-link">Home</a></li>
-            <li><a href="{% url 'about' %}" class="nav-link">About</a></li>
-            <li><a href="{% url 'flights' %}" class="nav-link">Plane Schedule</a></li>
-            <li><a href="{% url 'shop' %}" class="nav-link">Shop</a></li>
-            <li><a href="{% url 'contact_us' %}" class="nav-link">Contact us</a></li>
-            <li><a href="{% url 'service' %}" class="nav-link">Service</a></li>
-        </ul>
-        <div class="book-btn">
-            <button class="book-button">Book</button>
-        </div>
-    </nav>
+    {% include 'nav.html' %}
     <section class="bout">
         <div class="main">
             <!-- Carousel section -->
@@ -115,17 +94,6 @@
     </section>
 
 
-
-
-
-    <!-- <section class="mission-vision">
-        <h2>Our Mission and Vision</h2>
-        <p><strong>Mission:</strong> To deliver excellence in air travel with a focus on customer satisfaction and
-            safety.</p>
-        <p><strong>Vision:</strong> To be Africa’s most preferred airline, known for its innovative services and
-            world-class experience.</p>
-    </section>
-
     <section class="team">
         <h2>Meet Our Team</h2>
         <div class="team-member">
@@ -180,7 +148,7 @@
     <section class="cta">
         <h2>Ready to Fly?</h2>
         <a href="{% url 'flights' %}" class="btn-book">Book a Flight</a>
-    </section> -->
+    </section> 
 </body>
 
 </html>

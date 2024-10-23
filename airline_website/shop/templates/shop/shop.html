@@ -1,0 +1,145 @@
+{% load static %} <!-- Load the static files at the top of your template -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'shop/css/shop.css' %}">
+    <title>Your Title</title>
+</head>
+
+<body>
+    <!-- Include the navbar here -->
+    {% include 'nav.html' %}
+
+    <!-- The rest of your page content -->
+    <div>
+        <section id="shop">
+            <h2>Shop Our Collection</h2>
+            <div class="sub-nav">
+                <ul class="short-list">
+                    <li><a href="#">Perfumes & Cosmetics</a></li>
+                    <li><a href="#">Luxury Goods</a></li>
+                    <li><a href="#">ELectronics</a></li>
+                    <li><a href="#">Trvel Essentials</a></li>
+                    <li><a href="#">Snacks & Bevrages</a></li>
+                </ul>
+            </div>
+            <div class="products">
+                <h3 class="subheading">Perfumes</h3>
+                <div class="catalog">
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/orchid.jpg' %}" alt="Orchid Perfume">
+                        <h3>Orchid Perfume</h3>
+                        <p>$50.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/bubery.jpg' %}" alt="Bubery Perfume">
+                        <h3>Bubery Perfume</h3>
+                        <p>$60.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/dg.jpg' %}" alt="D&G Perfume">
+                        <h3>D&G Perfume</h3>
+                        <p>$70.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/dior.jpeg' %}" alt="Dior Perfume">
+                        <h3>Dior Perfume</h3>
+                        <p>$80.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/chanel.jpg' %}" alt="Chanel Perfume">
+                        <h3>Chanel Perfume</h3>
+                        <p>$90.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/obsession.jpg' %}" alt="Obsession Perfume">
+                        <h3>Obsession Perfume</h3>
+                        <p>$55.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <!-- More catalog items... -->
+                </div>
+                <h3 class="subheading">Luxury goods</h3>
+                <div class="catalog">
+                    <div class="catalog-item">
+                        <img src="product1.jpg" alt="Kenya Airways T-Shirt">
+                        <h3>Kenya Airways T-Shirt</h3>
+                        <p>$25.00</p>
+                        <button>Add to Cart</button>
+
+                    </div>
+                    <div class="catalog-item">
+                        <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
+                        <h3>Kenya Airways Travel Pillow</h3>
+                        <p>$15.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="product1.jpg" alt="Kenya Airways T-Shirt">
+                        <h3>Kenya Airways T-Shirt</h3>
+                        <p>$25.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
+                        <h3>Kenya Airways Travel Pillow</h3>
+                        <p>$15.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="product1.jpg" alt="Kenya Airways T-Shirt">
+                        <h3>Kenya Airways T-Shirt</h3>
+                        <p>$25.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
+                        <h3>Kenya Airways Travel Pillow</h3>
+                        <p>$15.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="product1.jpg" alt="Kenya Airways T-Shirt">
+                        <h3>Kenya Airways T-Shirt</h3>
+                        <p>$25.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
+                        <h3>Kenya Airways Travel Pillow</h3>
+                        <p>$15.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <!-- More catalog items... -->
+                </div>
+            </div>
+            <!-- <div class="catalog">
+                <div class="catalog-item">
+                    <img src="product1.jpg" alt="Kenya Airways T-Shirt">
+                    <h3>Kenya Airways T-Shirt</h3>
+                    <p>$25.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
+                    <h3>Kenya Airways Travel Pillow</h3>
+                    <p>$15.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- Content goes here -->
+    </div>
+</body>
+
+</html>

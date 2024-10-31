@@ -228,19 +228,19 @@ nav ul li:hover::after {
     border: 1px solid #dee2e685;
 }
 
-.table tbody tr td .btn {
-    width: 130px;
-    display: inline-block;
-    background-color: orangered;
-    line-height: 35px;
+.btn button {
+    padding: 10px 22px;
+    background-color: red;
     font-weight: medium;
     color: white;
     text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
     font-size: 14px;
-    opacity: 1;
+    border: 0;
+    
+}
+
+.btn button:hover {
+    background-color: orangered;
 }
 
 @media (max-width: 768px) {

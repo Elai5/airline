@@ -69,12 +69,21 @@
             <div class="text">
                 <h3>About Us</h3>
                 <h4>The Pride of Africa</h4>
-                <p>Kenya Airways is a 4-Star Airline, celebrated for exceptional airport and onboard services. Known as
-                    "The Pride of Africa," we have connected Africa to the world since 1977, offering trusted,
-                    world-class travel experiences.</p>
-                <p>Experience a new standard in travel with our modern fleet, over 50 destinations, and seamless
-                    connections. With Kenya Airways, every journey is more than just a flight—it's a welcoming embrace
-                    of African hospitality from takeoff to landing. Join us and see the world with us at your side.</p>
+                <!-- <p>Join us on an unforgettable journey with Kenya Airways, where luxury meets exceptional service. Relax
+                    in our high-comfort seats, enjoy the warm hospitality of our distinguished air hostesses, and
+                    benefit from 24-hour customer care dedicated to ensuring your satisfaction. Known as 'The Pride of
+                    Africa,' Kenya Airways is committed to delivering a world-class travel experience that blends
+                    comfort, safety, and remarkable service every time you fly with us.</p>
+                <p>Discover a new standard in air travel with our modern fleet, extensive network of over 50
+                    destinations, and seamless connections. With Kenya Airways, every journey goes beyond a flight—it's
+                    an embrace of African hospitality from takeoff to landing. Join us and explore the world with us at
+                    your side.</p> -->
+                <p>Fly with Kenya Airways, where luxury meets warm African hospitality. Relax in high-comfort seats,
+                    enjoy the service of our dedicated crew, and benefit from 24-hour customer care. Known as 'The Pride
+                    of Africa,' we deliver a world-class travel experience blending safety, comfort, and exceptional
+                    service.</p>
+                <p>With a modern fleet and over 50 destinations, every journey with Kenya Airways is more than just a
+                    flight. Join us and explore the world, embraced by African hospitality from takeoff to landing.</p>
                 <div class="btn">
                     <a href="{% url 'login' %}">
                         <button class="btn1">Login</button>
@@ -93,62 +102,30 @@
                 world with excellence and reliability.</p>
         </div>
     </section>
-
-
-    <section class="team">
-        <h2>Meet Our Team</h2>
-        <div class="team-member">
-            <img src="{% static 'about/images/executive1.jpg' %}" alt="Executive Name">
-            <h3>John Doe</h3>
-            <p>CEO</p>
-        </div>
-    </section>
-
-    <section class="achievements">
-        <h2>Achievements and Awards</h2>
-        <p>Kenya Airways has been recognized for its excellence in various categories, including:</p>
-        <ul>
-            <li>Best African Airline - 2023</li>
-            <li>Top Service Award - 2022</li>
-        </ul>
-    </section>
-
-    <section class="fleet">
-        <h2>Our Fleet</h2>
-        <p>Our fleet includes state-of-the-art aircraft designed for comfort and efficiency:</p>
-        <ul>
-            <li>Boeing 787 Dreamliner</li>
-            <li>Boeing 737</li>
-        </ul>
-    </section>
-
-    <section class="social-responsibility">
-        <h2>Social Responsibility</h2>
-        <p>Kenya Airways is dedicated to sustainability and community support:</p>
-        <ul>
-            <li>Carbon offset initiatives</li>
-            <li>Community outreach programs</li>
-        </ul>
-    </section>
-
     <section class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <blockquote>
-            <p>"Kenya Airways offers a fantastic travel experience with top-notch service." - Jane Smith</p>
-        </blockquote>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>For more information, reach out to us:</p>
-        <p>Email: support@kenyaairways.com</p>
-        <p>Phone: +254 123 456 789</p>
-        <a href="{% url 'contact_us' %}">Contact Form</a>
-    </section>
-
-    <section class="cta">
-        <h2>Ready to Fly?</h2>
-        <a href="{% url 'flights' %}" class="btn-book">Book a Flight</a>
+        <h2>What Our Passengers Say</h2>
+        <div class="testimonial-item">
+            <img src="{% static 'about/images/child.jpg' %}" alt="Passenger Name">
+            <h3>Jane Smith</h3>
+            <p>“Flying with Kenya Airways was a wonderful experience. The hospitality and comfort were unmatched!”</p>
+        </div>
+        <div class="testimonial-item">
+            <img src="{% static 'about/images/genz.jpg' %}" alt="Passenger Name">
+            <h3>Mark Johnson</h3>
+            <p>“The staff went above and beyond to make our journey smooth and enjoyable. Highly recommend!”</p>
+        </div>
+        <div class="testimonial-item">
+            <img src="{% static 'about/images/girl2.jpg' %}" alt="Passenger Name">
+            <h3>Susan Lee</h3>
+            <p>“Kenya Airways truly lives up to its reputation as 'The Pride of Africa.' A memorable flight experience!”
+            </p>
+        </div>
+        <div class="testimonial-item">
+            <img src="{% static 'about/images/chinese.jpg' %}" alt="Passenger Name">
+            <h3>Ahmed Ali</h3>
+            <p>“Exceptional service and punctuality. Kenya Airways made my journey effortless and enjoyable from start
+                to finish.”</p>
+        </div>
     </section>
 </body>
 

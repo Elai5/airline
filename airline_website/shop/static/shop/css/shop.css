@@ -22,7 +22,16 @@
     border-radius: 5px;
     padding: 20px;
     text-align: center;
+
 }
+
+.catalog-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: 1px solid green;
+}
+
+
 
 .catalog-item img {
     /* width: 100%; */
@@ -74,4 +83,15 @@ button:hover {
     color: steelblue;
     padding: 30px 0;
     font-size: 28px;
+}
+
+@media (max-width: 425px) {
+    .sub-nav {
+        display: none;
+    }
+
+    .catalog-item {
+        /* background-color: #d61a29; */
+        width: 85%;
+    }
 }

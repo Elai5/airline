@@ -108,7 +108,25 @@ button:hover {
 
 @media (max-width: 425px) {
     .sub-nav {
-        display: none;
+        width: 100%;
+        z-index: 0;
+        border-radius: px;
+    }
+
+    .short-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .short-list li {
+        padding: 0 5px;
+        font-size: 11px;
+    }
+
+    .short-list li a {
+        color: green;
+        font-size: 10px;
     }
 
     .catalog-item {

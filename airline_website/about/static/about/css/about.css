@@ -395,7 +395,8 @@ section {
     background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: auto;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,11 +408,11 @@ section {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
+    font-size: 14px;
 }
 
 .mission-content h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
 }
 
 .mission-content p {
@@ -468,9 +469,7 @@ section {
     font-style: italic;
 }
 
-section {
-    height: 100vh;
-}
+
 
 @media (min-width: 321px) and (max-width: 425px) {
     .mission-content {
@@ -487,4 +486,20 @@ section {
         font-size: 14px;
     }
 
+}
+
+@media (max-width: 320px) {
+
+    .mission-content h2,
+    .testimonials h2 {
+        font-size: 20px;
+    }
+
+    .mission-content p {
+        font-size: 14px;
+    }
+
+    .testimonial-item {
+        width: 100%;
+    }
 }

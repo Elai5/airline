@@ -128,7 +128,6 @@ section {
     width: 100%;
     padding: 0;
     margin-bottom: 20px;
-    /* background-color: red; */
 }
 
 .text h3 {
@@ -137,13 +136,13 @@ section {
     letter-spacing: 1px;
     font-weight: bolder;
     margin-bottom: 10px;
-    color: red;
+    /* color: red; */
     text-align: center;
 }
 
 .text h4 {
     font-size: 29px;
-    color: black;
+    color: red;
     margin-bottom: 20px;
     font-weight: 700;
     text-align: center;
@@ -175,7 +174,7 @@ section {
 }
 
 .btn1:hover {
-    background-color: #b71821;
+    background-color: green;
 }
 
 .btn {
@@ -185,9 +184,8 @@ section {
 }
 
 .small-carousel {
-    max-width: 1000px;
+    max-width: 1200px;
     height: auto;
-    /* height: 700px; */
     overflow: hidden;
     border-radius: 3px;
 }
@@ -200,7 +198,9 @@ section {
 }
 
 .small-carousel .carousel-caption h5 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: maroon;
+    font-weight: bold;
 }
 
 .small-carousel .carousel-caption p {
@@ -325,6 +325,8 @@ section {
         font-size: 14px;
         padding: 12px;
         margin-bottom: 15px;
+        height: auto;
+        min-height: 90vh;
     }
 
     .bout .text h3 {
@@ -337,7 +339,7 @@ section {
     }
 
     .bout .text p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
 }
@@ -371,6 +373,7 @@ section {
         text-align: justify;
         font-size: 12px;
         padding: 8px;
+        /* height: auto; */
     }
 
     .bout .text h3 {
@@ -388,8 +391,6 @@ section {
 
 
 }
-
-
 
 .our-mission {
     background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
@@ -439,6 +440,10 @@ section {
     margin-bottom: 20px;
 }
 
+.testimonials h3 {
+    color: red;
+}
+
 .testimonial-item {
     display: inline-block;
     width: 400px;
@@ -448,6 +453,10 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
+}
+
+.testimonial-item:hover {
+    cursor: pointer;
 }
 
 .testimonial-item img {
@@ -469,21 +478,20 @@ section {
     font-style: italic;
 }
 
-
-
 @media (min-width: 321px) and (max-width: 425px) {
-    .mission-content {
-        background-size: center;
-
-    }
 
     .mission-content h2,
     .testimonials h2 {
-        font-size: 20px;
+        font-size: 28px;
+        color: green;
     }
 
     .mission-content p {
-        font-size: 14px;
+        font-size: 21px;
+    }
+
+    .testimonial-item {
+        width: 100%;
     }
 
 }

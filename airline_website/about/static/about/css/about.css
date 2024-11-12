@@ -5,20 +5,19 @@
     text-decoration: none;
 }
 
-nav {
+/* nav {
     background-color: black;
     padding: 10px 20px;
     display: flex;
     align-items: center !important;
     justify-content: space-between;
     z-index: 1000 !important;
-    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%
-}
+} */
 
-nav img {
+/* nav img {
     height: 50px;
 }
 
@@ -28,14 +27,14 @@ nav input[type="checkbox"] {
 
 nav label {
     display: none;
-}
+} */
 
-nav h1 {
+/* nav h1 {
     color: white !important;
     font-size: 22px !important;
     text-decoration: none !important;
     font-weight: bold !important;
-}
+} */
 
 nav a {
     text-decoration: none;
@@ -48,7 +47,7 @@ nav h1 span {
     font-weight: bold !important;
 }
 
-nav ul {
+/* nav ul {
     list-style: none;
     display: flex !important;
     align-items: center !important;
@@ -57,7 +56,7 @@ nav ul {
 nav ul li {
     margin: 0 20px !important;
     position: relative;
-}
+} */
 
 nav ul li a {
     text-decoration: none;
@@ -70,7 +69,7 @@ nav ul li a {
     font-family: 'Times New Roman', Times, serif;
 }
 
-nav ul li::after {
+/* nav ul li::after {
     content: "";
     height: 3px;
     width: 0;
@@ -79,10 +78,14 @@ nav ul li::after {
     left: 0;
     bottom: -10px;
     transition: width 0.6s;
-}
+} */
 
 nav ul li:hover::after {
     width: 100%;
+}
+
+section {
+    margin: 0 5px;
 }
 
 .book-btn {
@@ -110,17 +113,22 @@ nav ul li:hover::after {
     height: 100vh;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .bout .main {
     display: flex;
     gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .text {
     max-width: 700px;
     width: 100%;
     padding: 0;
+    margin-bottom: 20px;
+    /* background-color: red; */
 }
 
 .text h3 {
@@ -198,6 +206,7 @@ nav ul li:hover::after {
 .small-carousel .carousel-caption p {
     font-size: 1rem;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%;
@@ -276,18 +285,21 @@ nav ul li:hover::after {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
-    .main {
+    .bout.main {
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
+        gap: 30px;
+        align-items: center;
     }
 
     .small-carousel,
     .text {
         max-width: 100%;
+        width: 100%;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 425px) {
     .navbar h1 {
         font-size: 16px;
     }
@@ -301,26 +313,94 @@ nav ul li:hover::after {
         font-size: 14px;
     }
 
+    .small-carousel {
+        margin-left: 10px;
+        height: 40vh;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .bout .text {
+        text-align: justify;
+        font-size: 14px;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .bout .text h3 {
+        font-size: 24px;
+        margin-top: -50px;
+    }
+
+    .bout .text h4 {
+        font-family: cursive;
+    }
+
+    .bout .text p {
+        font-size: 16px;
+    }
+
 }
+
+@media (max-width: 320px) {
+    #bout {
+        width: 100%;
+    }
+
+    .navbar h1 {
+        font-size: 14px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .book-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .small-carousel {
+        margin-left: 5px;
+        height: 40vh;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .bout .text {
+        text-align: justify;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .bout .text h3 {
+        font-size: 24px;
+        margin-top: -50px;
+    }
+
+    .bout .text h4 {
+        font-family: cursive;
+    }
+
+    .bout .text p {
+        font-size: 16px;
+    }
+
+
+}
+
+
 
 .our-mission {
     background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
     background-size: cover;
-    /* Cover the entire section */
     background-position: center;
-    /* Center the image */
     height: 100vh;
-    /* Full viewport height */
     display: flex;
-    /* Flexbox for centering content */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     color: white;
-    /* Text color */
     text-align: center;
-    /* Center text */
 }
 
 .mission-content {
@@ -346,8 +426,9 @@ nav ul li:hover::after {
 }
 
 .testimonials {
+    justify-content: center;
     text-align: center;
-    padding: 200px 30px;
+    padding: 200px 20px;
     background-color: #f9f9f9;
 }
 
@@ -389,4 +470,21 @@ nav ul li:hover::after {
 
 section {
     height: 100vh;
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+    .mission-content {
+        background-size: center;
+
+    }
+
+    .mission-content h2,
+    .testimonials h2 {
+        font-size: 20px;
+    }
+
+    .mission-content p {
+        font-size: 14px;
+    }
+
 }

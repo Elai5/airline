@@ -23,12 +23,10 @@
                     <li><a href="#">Luxury Goods</a></li>
                     <li><a href="#">Electronics</a></li>
                     <li><a href="#">Travel Essentials</a></li>
-                    <li><a href="#">Snacks & Bevrages</a></li>
                 </ul>
             </div>
             <div class="products">
                 <h3 class="subheading">Perfumes</h3>
-
                 <div class="catalog">
                     <div class="catalog-item">
                         <img src="{% static 'shop/images/orchid.jpg' %}" alt="Orchid Perfume">
@@ -50,13 +48,13 @@
                     </div>
                     <div class="catalog-item">
                         <img src="{% static 'shop/images/dior.jpeg' %}" alt="Dior Perfume">
-                        <h3>Dior Perfume</h3>
+                        <h3>Dior Sauvage Eau de Toilette</h3>
                         <p>$80.00</p>
                         <button>Add to Cart</button>
                     </div>
                     <div class="catalog-item">
                         <img src="{% static 'shop/images/chanel.jpg' %}" alt="Chanel Perfume">
-                        <h3>Chanel Perfume</h3>
+                        <h3>Chanel No. 5 Eau de Parfum</h3>
                         <p>$90.00</p>
                         <button>Add to Cart</button>
                     </div>
@@ -66,78 +64,133 @@
                         <p>$55.00</p>
                         <button>Add to Cart</button>
                     </div>
-
-                    <!-- More catalog items... -->
                 </div>
 
-                <h3 class="subheading">Luxury goods</h3>
+                <h3 class="subheading">Luxury Goods</h3>
                 <div class="catalog">
                     <div class="catalog-item">
-                        <img src="product1.jpg" alt="Kenya Airways T-Shirt">
-                        <h3>Kenya Airways T-Shirt</h3>
-                        <p>$25.00</p>
+                        <img src="{% static 'shop/images/watch.jpg' %}" alt="Rolex Watch">
+                        <h3>Rolex Submariner Watch</h3>
+                        <p>$12,500.00</p>
                         <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/pen.jpg' %}" alt="Montblanc Pen">
+                        <h3>Montblanc Meisterstück Rollerball Pen</h3>
+                        <p>$200.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/bag.jpg' %}" alt="Tumi Carry-On Bag">
+                        <h3>Tumi Alpha 3 Expandable Carry-On</h3>
+                        <p>$695.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/headphones.jpg' %}" alt="Bose Headphones">
+                        <h3>Bose QuietComfort 45 Noise-Canceling Headphones</h3>
+                        <p>$329.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/brace.jpg' %}" alt="Cartier Bracelet">
+                        <h3>Cartier Love Bracelet</h3>
+                        <p>$6,300.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/lvs.jpg' %}" alt="Louis Vuitton Monogram Canvas Backpack">
+                        <h3>Louis Vuitton Monogram Canvas Backpack</h3>
+                        <p>$2,150.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
 
-                    </div>
+                <h3 class="subheading">Electronics</h3>
+                <div class="catalog">
                     <div class="catalog-item">
-                        <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
-                        <h3>Kenya Airways Travel Pillow</h3>
-                        <p>$15.00</p>
+                        <img src="{% static 'shop/images/airpod.jpg' %}" alt="Apple AirPods">
+                        <h3>Apple AirPods Pro (2nd Generation)</h3>
+                        <p>$249.00</p>
                         <button>Add to Cart</button>
                     </div>
                     <div class="catalog-item">
-                        <img src="product1.jpg" alt="Kenya Airways T-Shirt">
-                        <h3>Kenya Airways T-Shirt</h3>
+                        <img src="{% static 'shop/images/samsung.jpg' %}" alt="Samsung Galaxy Z Flip 5">
+                        <h3>Samsung Galaxy Z Flip 5</h3>
+                        <p>$999.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/smart.jpg' %}" alt="Fitbit Sense 2">
+                        <h3>Fitbit Sense 2 Smartwatch</h3>
+                        <p>$299.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/canon.jpg' %}" alt="Canon Camera">
+                        <h3>Canon PowerShot G7 X Mark III Camera</h3>
+                        <p>$749.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/bt.jpg' %}" alt="Bose Bluetooth Speaker">
+                        <h3>Bose SoundLink Micro Bluetooth Speaker</h3>
+                        <p>$99.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/tracker.jpg' %}" alt="Canon Camera">
+                        <h3>Smart Luggage Tracker</h3>
+                        <p>$45.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+
+                <h3 class="subheading">Travel Essentials</h3>
+                <div class="catalog">
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/bag.jpg' %}" alt="Compact Carry-On Bag">
+                        <h3>Compact Carry-On Bag for Electronics</h3>
+                        <p>$120.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/pillow.jpg' %}" alt="Travel Pillow">
+                        <h3>Comfort Travel Pillow</h3>
                         <p>$25.00</p>
                         <button>Add to Cart</button>
                     </div>
                     <div class="catalog-item">
-                        <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
-                        <h3>Kenya Airways Travel Pillow</h3>
+                        <img src="{% static 'shop/images/power.jpg' %}" alt="Power Bank">
+                        <h3>Multi-Device Power Bank</h3>
+                        <p>$45.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/adpter.jpg' %}" alt="Universal Adapter">
+                        <h3>Universal Travel Adapter</h3>
+                        <p>$20.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/bottle.jpg' %}" alt="Water Bottle with Phone Holder">
+                        <h3>Water Bottle with Phone Holder</h3>
+                        <p>$30.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="{% static 'shop/images/travel.jpg' %}" alt="Travel-Sized Toiletries Kit">
+                        <h3>Travel-Sized Toiletries Kit</h3>
                         <p>$15.00</p>
                         <button>Add to Cart</button>
                     </div>
-                    <div class="catalog-item">
-                        <img src="product1.jpg" alt="Kenya Airways T-Shirt">
-                        <h3>Kenya Airways T-Shirt</h3>
-                        <p>$25.00</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <div class="catalog-item">
-                        <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
-                        <h3>Kenya Airways Travel Pillow</h3>
-                        <p>$15.00</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <div class="catalog-item">
-                        <img src="product1.jpg" alt="Kenya Airways T-Shirt">
-                        <h3>Kenya Airways T-Shirt</h3>
-                        <p>$25.00</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <div class="catalog-item">
-                        <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
-                        <h3>Kenya Airways Travel Pillow</h3>
-                        <p>$15.00</p>
-                        <button>Add to Cart</button>
-                    </div>
-                    <!-- More catalog items... -->
                 </div>
             </div>
-            <!-- <div class="catalog">
-                <div class="catalog-item">
-                    <img src="product1.jpg" alt="Kenya Airways T-Shirt">
-                    <h3>Kenya Airways T-Shirt</h3>
-                    <p>$25.00</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="catalog-item">
-                    <img src="product2.jpg" alt="Kenya Airways Travel Pillow">
-                    <h3>Kenya Airways Travel Pillow</h3>
-                    <p>$15.00</p>
-                    <button>Add to Cart</button>
-                </div>
-            </div> -->
+
+
+
+
+
         </section>
 
         <!-- Content goes here -->

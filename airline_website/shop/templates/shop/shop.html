@@ -1,4 +1,4 @@
-{% load static %} <!-- Load the static files at the top of your template -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,23 +10,20 @@
 </head>
 
 <body>
-    <!-- Include the navbar here -->
     {% include 'nav.html' %}
-
-    <!-- The rest of your page content -->
     <div>
         <section id="shop">
-            <h2>Shop Our Collection</h2>
             <div class="sub-nav">
+                <h2>Shop Our Collection</h2>
                 <ul class="short-list">
-                    <li><a href="#">Perfumes & Cosmetics</a></li>
-                    <li><a href="#">Luxury Goods</a></li>
-                    <li><a href="#">Electronics</a></li>
-                    <li><a href="#">Travel Essentials</a></li>
+                    <li><a href="#perfumes">Perfumes & Cosmetics</a></li>
+                    <li><a href="#luxury-goods">Luxury Goods</a></li>
+                    <li><a href="#electronics">Electronics</a></li>
+                    <li><a href="#travel-essentials">Travel Essentials</a></li>
                 </ul>
             </div>
             <div class="products">
-                <h3 class="subheading">Perfumes</h3>
+                <h3 id="perfumes" class="subheading">Perfumes</h3>
                 <div class="catalog">
                     <div class="catalog-item">
                         <img src="{% static 'shop/images/orchid.jpg' %}" alt="Orchid Perfume">
@@ -66,7 +63,7 @@
                     </div>
                 </div>
 
-                <h3 class="subheading">Luxury Goods</h3>
+                <h3 id="luxury-goods" class="subheading">Luxury Goods</h3>
                 <div class="catalog">
                     <div class="catalog-item">
                         <img src="{% static 'shop/images/watch.jpg' %}" alt="Rolex Watch">
@@ -106,7 +103,7 @@
                     </div>
                 </div>
 
-                <h3 class="subheading">Electronics</h3>
+                <h3 id="electronics" class="subheading">Electronics</h3>
                 <div class="catalog">
                     <div class="catalog-item">
                         <img src="{% static 'shop/images/airpod.jpg' %}" alt="Apple AirPods">
@@ -146,7 +143,7 @@
                     </div>
                 </div>
 
-                <h3 class="subheading">Travel Essentials</h3>
+                <h3 id="travel-essentials" class="subheading">Travel Essentials</h3>
                 <div class="catalog">
                     <div class="catalog-item">
                         <img src="{% static 'shop/images/bag.jpg' %}" alt="Compact Carry-On Bag">
@@ -186,14 +183,7 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </section>
-
-        <!-- Content goes here -->
     </div>
 </body>
 

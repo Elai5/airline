@@ -17,7 +17,7 @@ def register_view(request):
                 user = User.objects.create_user(username=name, email=email, password=password)
                 user.save()
                 messages.success(request, 'Account created successfully')
-                return redirect('login')
+                return redirect('accounts/login')
         else:
             messages.error(request, 'Passwords do not match')
             
@@ -36,4 +36,4 @@ def login_view(request):
         else:
             messages.error(request, 'Invalid credentials')
     
-    return render(request, 'accountslogin.html')
+    return render(request, 'accounts/login.html')

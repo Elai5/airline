@@ -244,6 +244,10 @@ nav ul li:hover::after {
     opacity: 1;
 }
 
+.table tbody tr td .btn:hover {
+    background-color: green;
+}
+
 .btn button {
     padding: 10px 22px;
     background-color: red;
@@ -252,13 +256,14 @@ nav ul li:hover::after {
     text-align: center;
     font-size: 14px;
     border: 0;
-    border-radius: 2px;
+    border-radius: 5px;
     margin: 10px;
 
 }
 
 .btn button:hover {
     background-color: orangered;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {

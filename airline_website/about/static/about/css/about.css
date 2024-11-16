@@ -498,7 +498,7 @@ section {
 
 .testimonial-item h3 {
     font-size: 1.2em;
-    color: #333;
+    color: green;
     margin: 10px 0 5px;
 }
 
@@ -506,6 +506,43 @@ section {
     font-size: 1em;
     color: #666;
     font-style: italic;
+    font-weight: 400;
+}
+
+@media (min-width:1440px) {
+    .row {
+        width: 100%;
+    }
+
+    .row .testimonial-item {
+        width: 400px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .testimonials {
+        /* background-color: gold; */
+        flex-wrap: wrap;
+        padding-top: 40px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .row .testimonial-item {
+        width: 200px;
+    }
+
+    .row .testimonial-item p {
+        font-size: 80%;
+    }
+
+    .mission-content h2 {
+        color: black;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 425px) {

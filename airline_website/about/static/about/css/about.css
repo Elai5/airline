@@ -444,6 +444,8 @@ section {
 
 .mission-content h2 {
     font-size: 3rem;
+    color: black;
+    font-weight: bolder;
 }
 
 .mission-content p {

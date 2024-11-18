@@ -1,18 +1,21 @@
-{# about/templates/about/about.html #}
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
-<div class="background">
-    <div class="form-sector">
-        <div class="form-container">
-            <form action="" method="post">
-                <h3>login now</h3>
-                <input type="email" name="email" required placeholder="enter your email">
-                <input type="password" name="password" required placeholder="enter your password">
-                <input type="submit" name="submit" value="login now" class="form-btn">
-                <p>don't have an account? <a href="register.html">register now</a></p>
-            </form>
-        </div>
-    </div>
-</div>
-{% endblock %}
+<!-- accounts/templates/accounts/login.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

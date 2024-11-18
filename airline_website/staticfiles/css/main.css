@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+nav h1 {
+    color: white;
+}
+
+nav h1 span {
+    color: red;
+    align-items: left;
+    padding-right: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+nav ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.6s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.book-btn {
+    display: flex;
+    align-items: center;
+}
+
+.book-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+
+.book-button:hover {
+    background-color: darkred;
+}
+
+.bout {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 25px;
+        cursor: pointer;
+
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        z-index: 10;
+    }
+
+    #check:checked~ul {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .book-btn {
+        display: none;
+    }
+
+    .menu-icon span {
+        background-color: white;
+        height: 2px;
+        width: 100%;
+        transition: all 0.3s ease;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    #check:checked+label .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #check:checked+label .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #check:checked+label .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 16px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .book-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

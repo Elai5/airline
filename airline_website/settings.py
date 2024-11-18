@@ -45,8 +45,8 @@ INSTALLED_APPS = [
     'contact',
     'testapp',
     'service',
-    'accounts',
     'django_extensions',
+    'myapp',
 ]
 
 MIDDLEWARE = [

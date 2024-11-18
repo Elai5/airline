@@ -1,10 +1,6 @@
-# Create your views here.
-# accounts/views.py
-
 from django.shortcuts import render
 
-def login_view(request):
-    return render(request, 'accounts/login.html')
+# Create your views here.
 
-def register_view(request):
+def login_view(request):
     return render(request, 'accounts/login.html')

@@ -1,19 +1,38 @@
-{% load static %}  <!-- Load the static files at the top of your template -->
+{% load static %} <!-- Load the static files at the top of your template -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'service/css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
     <title>Contct Us</title>
 </head>
+
 <body>
     <!-- Include the navbar here -->
     {% include 'nav.html' %}
+    <section class="bout">
+        <div class="main">
+            <img src="{% static 'contact/images/The Pride Of Africa.png' %}">
+            <div class="text">
+                <h3>Reach Out</h3>
+                <h4>The Pride Of Africa</h4>
+                <div class="contact-box">
+                    <div class="right">
+                        <h2>Contact Us</h2>
+                        <input type="text" class="field" placeholder="Yourname">
+                        <input type="text" class="field" placeholder=" your email">
+                        <input type="text" class="field" placeholder="phone">
+                        <textarea name="Message" id=""></textarea>
+                        <button class="button">send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- The rest of your page content -->
-    <div>
-        <!-- Content goes here -->
-    </div>
+
 </body>
+
 </html>

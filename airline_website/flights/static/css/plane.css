@@ -110,7 +110,6 @@ nav ul li:hover::after {
         height: 20px;
         width: 25px;
         cursor: pointer;
-
     }
 
     .navbar ul {
@@ -217,6 +216,11 @@ nav ul li:hover::after {
     border: 1px solid #dee2e685;
 }
 
+.table thead tr td:hover {
+    background-color: grey;
+}
+
+
 .table tbody tr td {
     font-size: 14px;
     letter-spacing: 0.35px;
@@ -227,7 +231,6 @@ nav ul li:hover::after {
     text-align: center;
     border: 1px solid #dee2e685;
 }
-
 
 .table tbody tr td .btn {
     width: 130px;
@@ -242,6 +245,7 @@ nav ul li:hover::after {
     border: 1px solid transparent;
     font-size: 14px;
     opacity: 1;
+    border-radius: 5px;
 }
 
 .table tbody tr td .btn:hover {
@@ -258,7 +262,6 @@ nav ul li:hover::after {
     border: 0;
     border-radius: 5px;
     margin: 10px;
-
 }
 
 .btn button:hover {
@@ -266,7 +269,7 @@ nav ul li:hover::after {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .table thead {
         display: none;
     }
@@ -297,5 +300,69 @@ nav ul li:hover::after {
         font-weight: 600px;
         font-size: 14px;
         text-align: left;
+    }
+} */
+
+@media (max-width: 768px) {
+
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+
+    }
+
+    /* Adjust padding for the table container */
+    .table-container {
+        padding: 0 10px;
+        padding-top: 20px;
+    }
+
+    /* Hide the table headers on small screens */
+    .table thead {
+        display: none;
+    }
+
+    /* Stack the table cells vertically and make them block level */
+    .table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .table tbody tr td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        /* Space for the labels */
+        position: relative;
+    }
+
+    /* Add labels to the table cells */
+    .table tbody tr td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: left;
+        color: rgb(17, 1, 1);
+        font-weight: bolder
+            /* Gray color for labels */
+    }
+
+    /* Adjust button styles for smaller screens */
+    .table tbody tr td .btn {
+        width: 50%;
+        text-align: center;
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .btn button {
+        font-size: 12px;
+        padding: 8px 16px;
     }
 }

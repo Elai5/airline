@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,108 +33,181 @@
             <button class="book-button">Book</button>
         </div>
     </nav>
-    
-     <section class="plane">
-            <div class="Schedule">
-                <div class="table-container">
-                    <h3 class="Travels">Flight Travels</h3>
-                    <h4>The Pride Of Africa</h4>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Terminal</th>
-                                <th>Flight</th>
-                                <th>Dest/Origin</th>
-                                <th>Arr/Dep</th>
-                                <th>Gate</th>
-                                <th>Available Classes</th>
-                                <th>Seat</th>
-                                <th>Status</th>
-                                <th>#</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="Terminal">001</td>
-                                <td data-label="Flight">KQ486</td>
-                                <td data-label="Dest/Origin">Capetown</td>
-                                <td data-label="Arr/Dep">0900-1100</td>
-                                <td data-label="Gate">G-016</td>
-                                <td data-label="Available Classes">Economy</td>
-                                <td data-label="Seat">15</td>
-                                <td data-label="Status">Schedule On Time</td>
-                                <td data-label="#"><a href="booking.html" class="btn">Book Now</a></td>
-                            </tr>
-                            <tr>
-                                <td data-label="Terminal">006</td>
-                                <td data-label="Flight">KQ457</td>
-                                <td data-label="Dest/Origin">Nairobi</td>
-                                <td data-label="Arr/Dep">0700-0900</td>
-                                <td data-label="Gate">E-09</td>
-                                <td data-label="Available Classes">Business-class</td>
-                                <td data-label="Seat">06</td>
-                                <td data-label="Status">Schedule On Time</td>
-                                <td data-label="#"><a href="#" class="btn">Book Now</a></td>
-                            </tr>
-                            <tr>
-                                <td data-label="Terminal">001</td>
-                                <td data-label="Flight">KQ478</td>
-                                <td data-label="Dest/Origin">Kigali</td>
-                                <td data-label="Arr/Dep">1600-1750</td>
-                                <td data-label="Gate">G-08</td>
-                                <td data-label="Available Classes">First-class</td>
-                                <td data-label="Seat">03</td>
-                                <td data-label="Status">Delayed</td>
-                                <td data-label="#"><a href="#" class="btn">Book Now</a></td>
-                            </tr>
-                            <tr>
-                                <td data-label="Terminal">007</td>
-                                <td data-label="Flight">Boeing 787-6-Dreamliner</td>
-                                <td data-label="Dest/Origin">Monaco</td>
-                                <td data-label="Arr/Dep">2230-0630</td>
-                                <td data-label="Gate">G-012</td>
-                                <td data-label="Available Classes">Business-class</td>
-                                <td data-label="Seat">05</td>
-                                <td data-label="Status">Schedule On Time</td>
-                                <td data-label="#"><a href="#" class="btn">Book Now</a></td>
-                            </tr>
-                            <tr>
-                                <td data-label="Terminal">005</td>
-                                <td data-label="Flight">Fokker f50/ f60</td>
-                                <td data-label="Dest/Origin">Dubai</td>
-                                <td data-label="Arr/Dep">0100-1045</td>
-                                <td data-label="Gate">A-002</td>
-                                <td data-label="Available Classes">Prenium-Economy</td>
-                                <td data-label="Seat">15</td>
-                                <td data-label="Status">Schedule On Time</td>
-                                <td data-label="#"><a href="#" class="btn">Book Now</a></td>
-                            </tr>
-                            <tr>
-                                <td data-label="Terminal">003</td>
-                                <td data-label="Flight">Airbus A310</td>
-                                <td data-label="Dest/Origin">London</td>
-                                <td data-label="Arr/Dep">1100-0120</td>
-                                <td data-label="Gate">B-002</td>
-                                <td data-label="Available Classes">First-class</td>
-                                <td data-label="Seat">01</td>
-                                <td data-label="Status">Schedule On Time</td>
-                                <td data-label="#"><a href="#" class="btn">Book Now</a></td>
-                            </tr>
-                        </tbody>
-                        
-                    </table>
 
-                   <div class="btn"> 
-                    {% comment %} <a href="register.html"><button class="btn1">Register</button></a> {% endcomment %}
+    <section class="plane">
+        <div class="Schedule">
+            <div class="table-container">
+                <h3 class="Travels">Flight Travels</h3>
+                <h4>The Pride Of Africa</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Terminal</th>
+                            <th>Flight</th>
+                            <th>Dest/Origin</th>
+                            <th>Arr/Dep</th>
+                            <th>Gate</th>
+                            <th>Available Classes</th>
+                            <th>Seat</th>
+                            <th>Status</th>
+                            <th>#</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Terminal">001</td>
+                            <td data-label="Flight">KQ486</td>
+                            <td data-label="Dest/Origin">Capetown</td>
+                            <td data-label="Arr/Dep">0900-1100</td>
+                            <td data-label="Gate">G-016</td>
+                            <td data-label="Available Classes">Economy</td>
+                            <td data-label="Seat">15</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="booking.html" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">006</td>
+                            <td data-label="Flight">KQ457</td>
+                            <td data-label="Dest/Origin">Nairobi</td>
+                            <td data-label="Arr/Dep">0700-0900</td>
+                            <td data-label="Gate">E-09</td>
+                            <td data-label="Available Classes">Business-class</td>
+                            <td data-label="Seat">06</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="#" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">001</td>
+                            <td data-label="Flight">KQ478</td>
+                            <td data-label="Dest/Origin">Kigali</td>
+                            <td data-label="Arr/Dep">1600-1750</td>
+                            <td data-label="Gate">G-08</td>
+                            <td data-label="Available Classes">First-class</td>
+                            <td data-label="Seat">03</td>
+                            <td data-label="Status">Delayed</td>
+                            <td data-label="#"><a href="#" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">007</td>
+                            <td data-label="Flight">Boeing 787-6-Dreamliner</td>
+                            <td data-label="Dest/Origin">Monaco</td>
+                            <td data-label="Arr/Dep">2230-0630</td>
+                            <td data-label="Gate">G-012</td>
+                            <td data-label="Available Classes">Business-class</td>
+                            <td data-label="Seat">05</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="#" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">005</td>
+                            <td data-label="Flight">Fokker f50/ f60</td>
+                            <td data-label="Dest/Origin">Dubai</td>
+                            <td data-label="Arr/Dep">0100-1045</td>
+                            <td data-label="Gate">A-002</td>
+                            <td data-label="Available Classes">Prenium-Economy</td>
+                            <td data-label="Seat">15</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="#" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">003</td>
+                            <td data-label="Flight">Airbus A310</td>
+                            <td data-label="Dest/Origin">London</td>
+                            <td data-label="Arr/Dep">1100-0120</td>
+                            <td data-label="Gate">B-002</td>
+                            <td data-label="Available Classes">First-class</td>
+                            <td data-label="Seat">01</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label=""><a href="#" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">004</td>
+                            <td data-label="Flight">KQ155 (Operated by Delta Air Lines)</td>
+                            <td data-label="Dest/Origin">New York</td>
+                            <td data-label="Arr/Dep">1340-1710</td>
+                            <td data-label="Gate">D-009</td>
+                            <td data-label="Available Classes">Economy</td>
+                            <td data-label="Seat">20</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="#" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">003</td>
+                            <td data-label="Flight">KQ204 (Operated by Air France)</td>
+                            <td data-label="Dest/Origin">London</td>
+                            <td data-label="Arr/Dep">1100-0120</td>
+                            <td data-label="Gate">B-002</td>
+                            <td data-label="Available Classes">First-class</td>
+                            <td data-label="Seat">01</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label=""><a href="#" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">008</td>
+                            <td data-label="Flight">KQ453</td>
+                            <td data-label="Dest/Origin">Paris</td>
+                            <td data-label="Arr/Dep">1800-2000</td>
+                            <td data-label="Gate">D-045</td>
+                            <td data-label="Available Classes">Economy</td>
+                            <td data-label="Seat">20</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="booking.html" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">009</td>
+                            <td data-label="Flight">KQ487</td>
+                            <td data-label="Dest/Origin">Cairo</td>
+                            <td data-label="Arr/Dep">2200-0600</td>
+                            <td data-label="Gate">E-019</td>
+                            <td data-label="Available Classes">Business-class</td>
+                            <td data-label="Seat">25</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="booking.html" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">010</td>
+                            <td data-label="Flight">KQ492</td>
+                            <td data-label="Dest/Origin">Lagos</td>
+                            <td data-label="Arr/Dep">1300-1500</td>
+                            <td data-label="Gate">F-026</td>
+                            <td data-label="Available Classes">Economy</td>
+                            <td data-label="Seat">08</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="booking.html" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">011</td>
+                            <td data-label="Flight">KQ455</td>
+                            <td data-label="Dest/Origin">Zanzibar</td>
+                            <td data-label="Arr/Dep">1500-1700</td>
+                            <td data-label="Gate">B-031</td>
+                            <td data-label="Available Classes">Premium-Economy</td>
+                            <td data-label="Seat">18</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="booking.html" class="btn">Book Now</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Terminal">012</td>
+                            <td data-label="Flight">KQ473</td>
+                            <td data-label="Dest/Origin">Johannesburg</td>
+                            <td data-label="Arr/Dep">0600-0800</td>
+                            <td data-label="Gate">C-010</td>
+                            <td data-label="Available Classes">Business-class</td>
+                            <td data-label="Seat">12</td>
+                            <td data-label="Status">Schedule On Time</td>
+                            <td data-label="#"><a href="booking.html" class="btn">Book Now</a></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <div class="btn">
                     <a href="{% url 'login' %}"><button class="btn1">Log in</button></a>
                     <a href="{% url 'register' %}"><button class="btn1">Register</button></a>
-
-                    {% comment %} <button class="btn1" onclick="window.location.href='{% url 'login' %}'">Log in</button> {% endcomment %}
-
-                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
 </body>
+
 </html>

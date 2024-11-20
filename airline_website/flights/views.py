@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def plane_schedule_view(request):
     return render(request, 'flights/plane_schedule.html')
+
+
+def log_view(request):
+    return render(request, 'flights/log.html')

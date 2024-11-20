@@ -123,10 +123,12 @@
                         
                     </table>
 
-                   <div class="btn">
-                    {% comment %} <a href="{% url 'login' %}"><button class="btn1">Log in</button> {% endcomment %}
+                   <div class="btn"> 
+                    {% comment %} <a href="register.html"><button class="btn1">Register</button></a> {% endcomment %}
                     <a href="{% url 'login' %}"><button class="btn1">Log in</button></a>
-                    <a href="register.html"><button class="btn1">Register</button></a>
+
+                    {% comment %} <button class="btn1" onclick="window.location.href='{% url 'login' %}'">Log in</button> {% endcomment %}
+
                      </div>
                 </div>
             </div>

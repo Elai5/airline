@@ -64,7 +64,7 @@ button {
 }
 
 button:hover {
-    background-color: #bb151f;
+    background-color: green;
 }
 
 .sub-nav {

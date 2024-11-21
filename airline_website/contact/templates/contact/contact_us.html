@@ -6,31 +6,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
-    <title>Contct Us</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
-    <!-- Include the navbar here -->
+
     {% include 'nav.html' %}
-    <section class="bout">
+    {% comment %} <section class="bout">
         <div class="main">
-            <img src="{% static 'contact/images/The Pride Of Africa.png' %}">
+            <img src="{% static 'contact/images/The Pride Of Africa.png' %}" alt="The Pride Of Africa">
             <div class="text">
                 <h3>Reach Out</h3>
                 <h4>The Pride Of Africa</h4>
                 <div class="contact-box">
                     <div class="right">
                         <h2>Contact Us</h2>
-                        <input type="text" class="field" placeholder="Yourname">
-                        <input type="text" class="field" placeholder=" your email">
-                        <input type="text" class="field" placeholder="phone">
-                        <textarea name="Message" id=""></textarea>
-                        <button class="button">send</button>
+                        <form id="contact-form" onsubmit="return handleSubmit(event)">
+                            <input type="text" class="field" placeholder="Your Name" name="name" id="name" required>
+                            <input type="email" class="field" placeholder="Your Email" name="email" id="email" required>
+                            <input type="tel" class="field" placeholder="Your Phone Number" name="phone" id="phone"
+                                required>
+                            <textarea name="message" placeholder="Your Message" id="message" required></textarea>
+                            <button type="submit" class="button">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </section> {% endcomment %}
+
+
+
+
+    <section class="bout">
+        <div class="main">
+          
+            <img src="{% static 'contact/images/airbus4.jpg' %}" alt="Pride of Africa Image">
+           
+        
+            <div class="text">
+                <div class="heading">
+                    <h3>Reach Out</h3>
+                    <h4>The Pride Of Africa</h4>
+                    <h2>Contact Us</h2>
+                </div>
+
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="text" class="field" placeholder="Your Name" name="name" required>
+                    <input type="email" class="field" placeholder="Your Email" name="email" required>
+                    <input type="text" class="field" placeholder="Phone" name="phone">
+                    <textarea name="message" class="field" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="button">Send</button>
+                </form>
+            </div>
+        </div>
     </section>
+
+    <script src="{% static 'contact/js/contact.js' %}"></script>
 
 
 </body>

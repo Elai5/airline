@@ -99,9 +99,6 @@ section {
     margin-bottom: 20px;
     font-weight: 700;
     text-align: center;
-    /* font-family: "Kalam", cursive;
-    font-weight: 400;
-    font-style: normal; */
 }
 
 .text p {
@@ -453,8 +450,8 @@ section {
 }
 
 .testimonial-item img {
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
     margin-bottom: 15px;
 }
@@ -538,15 +535,13 @@ section {
         width: 100%;
     }
 
+    .testimonial-item img {
+        width: 35%;
+    }
+
     .testimonial-item h3 {
         color: green;
     }
-
-    /* 
-    .our-mission {
-        background-image: none;
-    } */
-
 }
 
 @media (max-width: 320px) {

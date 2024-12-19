@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-dkr1i7cd)@@aq5vrt&xns7cflgk9#h8n!e8x4t7wmsj40^1-gy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kenya-airways.onrender.com', '127.0.0.1']
+ALLOWED_HOSTS = ['kenya-airways.onrender.com', '127.0.0.1', '0.0.0.0']
 
 
 # Application definition

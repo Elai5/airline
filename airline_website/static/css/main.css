@@ -100,8 +100,6 @@ nav ul li:hover::after {
 
 }
 
-
-
 @media (max-width: 768px) {
     .menu-icon {
         display: flex;
